@@ -46,9 +46,10 @@ export default {
 <style lang="scss" scoped>
 main {
   background-color: var(--primary-color);
+  z-index: 10;
 }
 .shop-options {
-  padding: 50px 0;
+  padding: 30px 0;
   display: flex;
   justify-content: space-between;
 
