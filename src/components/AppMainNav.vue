@@ -58,7 +58,7 @@ export default {
     };
   },
   methods: {
-    changeLInk(index) {
+    changeLink(index) {
       this.links.forEach((elm, i) => {
         if (i === index) {
           elm.active = true;
@@ -91,20 +91,24 @@ export default {
   display: flex;
 
   ul {
+    display: flex;
     list-style: none;
 
     li {
       padding: 10px 20px;
+      margin: 0 2px;
 
       a {
         text-decoration: none;
-        color: var(--secondary-color);
+        color: inherit;
+
+        &.active {
+          color: var(--primary-color);
+          border-bottom: 4px solid var(--primary-color);
+          padding-bottom: 35px;
+        }
       }
     }
   }
-}
-
-.active {
-  background-color: var(--primary-color);
 }
 </style>

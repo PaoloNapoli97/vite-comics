@@ -4,6 +4,13 @@ export default {
 };
 </script>
 
-<template></template>
+<template>
+  <main></main>
+  <footer></footer>
+</template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+header {
+  background-image: url("");
+}
+</style>

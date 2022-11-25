@@ -1,5 +1,19 @@
-<script></script>
+<script>
+import SectionProducts from "./SectionProducts.vue";
+import AppList from "./AppList.vue";
 
-<template></template>
+export default {
+  name: "AppMain",
+  components: {
+    SectionProducts,
+    AppList,
+  },
+};
+</script>
 
-<style></style>
+<template>
+  <SectionProducts />
+  <AppList />
+</template>
+
+<style lang="scss" scoped></style>
